@@ -1,0 +1,486 @@
+Simulator report for stepper
+Sun Dec 11 01:13:34 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 198 nodes    ;
+; Simulation Coverage         ;      34.52 % ;
+; Total Number of Transitions ; 1224657      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Functional  ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; stepper.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      34.52 % ;
+; Total nodes checked                                 ; 198          ;
+; Total output ports checked                          ; 197          ;
+; Total output ports with complete 1/0-value coverage ; 68           ;
+; Total output ports with no 1/0-value coverage       ; 128          ;
+; Total output ports with no 1-value coverage         ; 128          ;
+; Total output ports with no 0-value coverage         ; 129          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                    ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |stepper|xtalClk                     ; |stepper|xtalClk                     ; out              ;
+; |stepper|clkDivider:inst|counter[0]  ; |stepper|clkDivider:inst|counter[0]  ; regout           ;
+; |stepper|clkDivider:inst|counter~6   ; |stepper|clkDivider:inst|counter~6   ; out              ;
+; |stepper|clkDivider:inst|counter~7   ; |stepper|clkDivider:inst|counter~7   ; out              ;
+; |stepper|clkDivider:inst|counter~8   ; |stepper|clkDivider:inst|counter~8   ; out              ;
+; |stepper|clkDivider:inst|counter~9   ; |stepper|clkDivider:inst|counter~9   ; out              ;
+; |stepper|clkDivider:inst|counter~10  ; |stepper|clkDivider:inst|counter~10  ; out              ;
+; |stepper|clkDivider:inst|counter~11  ; |stepper|clkDivider:inst|counter~11  ; out              ;
+; |stepper|clkDivider:inst|counter~12  ; |stepper|clkDivider:inst|counter~12  ; out              ;
+; |stepper|clkDivider:inst|counter~13  ; |stepper|clkDivider:inst|counter~13  ; out              ;
+; |stepper|clkDivider:inst|counter~14  ; |stepper|clkDivider:inst|counter~14  ; out              ;
+; |stepper|clkDivider:inst|counter~15  ; |stepper|clkDivider:inst|counter~15  ; out              ;
+; |stepper|clkDivider:inst|counter~16  ; |stepper|clkDivider:inst|counter~16  ; out              ;
+; |stepper|clkDivider:inst|counter~17  ; |stepper|clkDivider:inst|counter~17  ; out              ;
+; |stepper|clkDivider:inst|counter~18  ; |stepper|clkDivider:inst|counter~18  ; out              ;
+; |stepper|clkDivider:inst|counter~19  ; |stepper|clkDivider:inst|counter~19  ; out              ;
+; |stepper|clkDivider:inst|counter~20  ; |stepper|clkDivider:inst|counter~20  ; out              ;
+; |stepper|clkDivider:inst|counter~21  ; |stepper|clkDivider:inst|counter~21  ; out              ;
+; |stepper|clkDivider:inst|counter~22  ; |stepper|clkDivider:inst|counter~22  ; out              ;
+; |stepper|clkDivider:inst|counter~23  ; |stepper|clkDivider:inst|counter~23  ; out              ;
+; |stepper|clkDivider:inst|counter[15] ; |stepper|clkDivider:inst|counter[15] ; regout           ;
+; |stepper|clkDivider:inst|counter[14] ; |stepper|clkDivider:inst|counter[14] ; regout           ;
+; |stepper|clkDivider:inst|counter[13] ; |stepper|clkDivider:inst|counter[13] ; regout           ;
+; |stepper|clkDivider:inst|counter[12] ; |stepper|clkDivider:inst|counter[12] ; regout           ;
+; |stepper|clkDivider:inst|counter[11] ; |stepper|clkDivider:inst|counter[11] ; regout           ;
+; |stepper|clkDivider:inst|counter[10] ; |stepper|clkDivider:inst|counter[10] ; regout           ;
+; |stepper|clkDivider:inst|counter[9]  ; |stepper|clkDivider:inst|counter[9]  ; regout           ;
+; |stepper|clkDivider:inst|counter[8]  ; |stepper|clkDivider:inst|counter[8]  ; regout           ;
+; |stepper|clkDivider:inst|counter[7]  ; |stepper|clkDivider:inst|counter[7]  ; regout           ;
+; |stepper|clkDivider:inst|counter[6]  ; |stepper|clkDivider:inst|counter[6]  ; regout           ;
+; |stepper|clkDivider:inst|counter[5]  ; |stepper|clkDivider:inst|counter[5]  ; regout           ;
+; |stepper|clkDivider:inst|counter[4]  ; |stepper|clkDivider:inst|counter[4]  ; regout           ;
+; |stepper|clkDivider:inst|counter[3]  ; |stepper|clkDivider:inst|counter[3]  ; regout           ;
+; |stepper|clkDivider:inst|counter[2]  ; |stepper|clkDivider:inst|counter[2]  ; regout           ;
+; |stepper|clkDivider:inst|counter[1]  ; |stepper|clkDivider:inst|counter[1]  ; regout           ;
+; |stepper|clkDivider:inst|Add0~0      ; |stepper|clkDivider:inst|Add0~0      ; out0             ;
+; |stepper|clkDivider:inst|Add0~1      ; |stepper|clkDivider:inst|Add0~1      ; out0             ;
+; |stepper|clkDivider:inst|Add0~2      ; |stepper|clkDivider:inst|Add0~2      ; out0             ;
+; |stepper|clkDivider:inst|Add0~3      ; |stepper|clkDivider:inst|Add0~3      ; out0             ;
+; |stepper|clkDivider:inst|Add0~4      ; |stepper|clkDivider:inst|Add0~4      ; out0             ;
+; |stepper|clkDivider:inst|Add0~5      ; |stepper|clkDivider:inst|Add0~5      ; out0             ;
+; |stepper|clkDivider:inst|Add0~6      ; |stepper|clkDivider:inst|Add0~6      ; out0             ;
+; |stepper|clkDivider:inst|Add0~7      ; |stepper|clkDivider:inst|Add0~7      ; out0             ;
+; |stepper|clkDivider:inst|Add0~8      ; |stepper|clkDivider:inst|Add0~8      ; out0             ;
+; |stepper|clkDivider:inst|Add0~9      ; |stepper|clkDivider:inst|Add0~9      ; out0             ;
+; |stepper|clkDivider:inst|Add0~10     ; |stepper|clkDivider:inst|Add0~10     ; out0             ;
+; |stepper|clkDivider:inst|Add0~11     ; |stepper|clkDivider:inst|Add0~11     ; out0             ;
+; |stepper|clkDivider:inst|Add0~12     ; |stepper|clkDivider:inst|Add0~12     ; out0             ;
+; |stepper|clkDivider:inst|Add0~13     ; |stepper|clkDivider:inst|Add0~13     ; out0             ;
+; |stepper|clkDivider:inst|Add0~14     ; |stepper|clkDivider:inst|Add0~14     ; out0             ;
+; |stepper|clkDivider:inst|Add0~15     ; |stepper|clkDivider:inst|Add0~15     ; out0             ;
+; |stepper|clkDivider:inst|Add0~16     ; |stepper|clkDivider:inst|Add0~16     ; out0             ;
+; |stepper|clkDivider:inst|Add0~17     ; |stepper|clkDivider:inst|Add0~17     ; out0             ;
+; |stepper|clkDivider:inst|Add0~18     ; |stepper|clkDivider:inst|Add0~18     ; out0             ;
+; |stepper|clkDivider:inst|Add0~19     ; |stepper|clkDivider:inst|Add0~19     ; out0             ;
+; |stepper|clkDivider:inst|Add0~20     ; |stepper|clkDivider:inst|Add0~20     ; out0             ;
+; |stepper|clkDivider:inst|Add0~21     ; |stepper|clkDivider:inst|Add0~21     ; out0             ;
+; |stepper|clkDivider:inst|Add0~22     ; |stepper|clkDivider:inst|Add0~22     ; out0             ;
+; |stepper|clkDivider:inst|Add0~23     ; |stepper|clkDivider:inst|Add0~23     ; out0             ;
+; |stepper|clkDivider:inst|Add0~24     ; |stepper|clkDivider:inst|Add0~24     ; out0             ;
+; |stepper|clkDivider:inst|Add0~25     ; |stepper|clkDivider:inst|Add0~25     ; out0             ;
+; |stepper|clkDivider:inst|Add0~26     ; |stepper|clkDivider:inst|Add0~26     ; out0             ;
+; |stepper|clkDivider:inst|Add0~27     ; |stepper|clkDivider:inst|Add0~27     ; out0             ;
+; |stepper|clkDivider:inst|Add0~28     ; |stepper|clkDivider:inst|Add0~28     ; out0             ;
+; |stepper|clkDivider:inst|Add0~29     ; |stepper|clkDivider:inst|Add0~29     ; out0             ;
+; |stepper|clkDivider:inst|Add0~30     ; |stepper|clkDivider:inst|Add0~30     ; out0             ;
+; |stepper|clkDivider:inst|Add0~31     ; |stepper|clkDivider:inst|Add0~31     ; out0             ;
+; |stepper|clkDivider:inst|Add0~32     ; |stepper|clkDivider:inst|Add0~32     ; out0             ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                         ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                     ; Output Port Name                                                              ; Output Port Type ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |stepper|stepOut[3]                                                           ; |stepper|stepOut[3]                                                           ; pin_out          ;
+; |stepper|stepOut[2]                                                           ; |stepper|stepOut[2]                                                           ; pin_out          ;
+; |stepper|stepOut[1]                                                           ; |stepper|stepOut[1]                                                           ; pin_out          ;
+; |stepper|stepOut[0]                                                           ; |stepper|stepOut[0]                                                           ; pin_out          ;
+; |stepper|reset                                                                ; |stepper|reset                                                                ; out              ;
+; |stepper|speedSel[7]                                                          ; |stepper|speedSel[7]                                                          ; out              ;
+; |stepper|speedSel[6]                                                          ; |stepper|speedSel[6]                                                          ; out              ;
+; |stepper|speedSel[5]                                                          ; |stepper|speedSel[5]                                                          ; out              ;
+; |stepper|speedSel[4]                                                          ; |stepper|speedSel[4]                                                          ; out              ;
+; |stepper|speedSel[3]                                                          ; |stepper|speedSel[3]                                                          ; out              ;
+; |stepper|speedSel[2]                                                          ; |stepper|speedSel[2]                                                          ; out              ;
+; |stepper|speedSel[1]                                                          ; |stepper|speedSel[1]                                                          ; out              ;
+; |stepper|dirSelect                                                            ; |stepper|dirSelect                                                            ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~0                                       ; |stepper|priorityEnc:inst1|encoderOut~0                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~1                                       ; |stepper|priorityEnc:inst1|encoderOut~1                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~2                                       ; |stepper|priorityEnc:inst1|encoderOut~2                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~3                                       ; |stepper|priorityEnc:inst1|encoderOut~3                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~4                                       ; |stepper|priorityEnc:inst1|encoderOut~4                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~5                                       ; |stepper|priorityEnc:inst1|encoderOut~5                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~6                                       ; |stepper|priorityEnc:inst1|encoderOut~6                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~7                                       ; |stepper|priorityEnc:inst1|encoderOut~7                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~8                                       ; |stepper|priorityEnc:inst1|encoderOut~8                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~9                                       ; |stepper|priorityEnc:inst1|encoderOut~9                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~10                                      ; |stepper|priorityEnc:inst1|encoderOut~10                                      ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut[2]                                      ; |stepper|priorityEnc:inst1|encoderOut[2]                                      ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut[1]                                      ; |stepper|priorityEnc:inst1|encoderOut[1]                                      ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut[0]                                      ; |stepper|priorityEnc:inst1|encoderOut[0]                                      ; out              ;
+; |stepper|clkDivider:inst|counter~0                                            ; |stepper|clkDivider:inst|counter~0                                            ; out              ;
+; |stepper|clkDivider:inst|counter~1                                            ; |stepper|clkDivider:inst|counter~1                                            ; out              ;
+; |stepper|clkDivider:inst|counter~2                                            ; |stepper|clkDivider:inst|counter~2                                            ; out              ;
+; |stepper|clkDivider:inst|counter~3                                            ; |stepper|clkDivider:inst|counter~3                                            ; out              ;
+; |stepper|clkDivider:inst|counter~4                                            ; |stepper|clkDivider:inst|counter~4                                            ; out              ;
+; |stepper|clkDivider:inst|counter~5                                            ; |stepper|clkDivider:inst|counter~5                                            ; out              ;
+; |stepper|clkDivider:inst|counter[23]                                          ; |stepper|clkDivider:inst|counter[23]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[22]                                          ; |stepper|clkDivider:inst|counter[22]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[21]                                          ; |stepper|clkDivider:inst|counter[21]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[20]                                          ; |stepper|clkDivider:inst|counter[20]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[19]                                          ; |stepper|clkDivider:inst|counter[19]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[18]                                          ; |stepper|clkDivider:inst|counter[18]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[17]                                          ; |stepper|clkDivider:inst|counter[17]                                          ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive~0                                     ; |stepper|stepperCtrl:inst2|stepperDrive~0                                     ; out0             ;
+; |stepper|stepperCtrl:inst2|stepperDrive[0]                                    ; |stepper|stepperCtrl:inst2|stepperDrive[0]                                    ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive~1                                     ; |stepper|stepperCtrl:inst2|stepperDrive~1                                     ; out0             ;
+; |stepper|stepperCtrl:inst2|PS.S0                                              ; |stepper|stepperCtrl:inst2|PS.S0                                              ; regout           ;
+; |stepper|stepperCtrl:inst2|PS.S1                                              ; |stepper|stepperCtrl:inst2|PS.S1                                              ; regout           ;
+; |stepper|stepperCtrl:inst2|PS.S2                                              ; |stepper|stepperCtrl:inst2|PS.S2                                              ; regout           ;
+; |stepper|stepperCtrl:inst2|PS.S3                                              ; |stepper|stepperCtrl:inst2|PS.S3                                              ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive[3]                                    ; |stepper|stepperCtrl:inst2|stepperDrive[3]                                    ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive[2]                                    ; |stepper|stepperCtrl:inst2|stepperDrive[2]                                    ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive[1]                                    ; |stepper|stepperCtrl:inst2|stepperDrive[1]                                    ; regout           ;
+; |stepper|stepperCtrl:inst2|PS~2                                               ; |stepper|stepperCtrl:inst2|PS~2                                               ; out0             ;
+; |stepper|stepperCtrl:inst2|PS~3                                               ; |stepper|stepperCtrl:inst2|PS~3                                               ; out0             ;
+; |stepper|stepperCtrl:inst2|PS~5                                               ; |stepper|stepperCtrl:inst2|PS~5                                               ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~0                                        ; |stepper|stepperCtrl:inst2|Selector0~0                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|PS~7                                               ; |stepper|stepperCtrl:inst2|PS~7                                               ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~1                                        ; |stepper|stepperCtrl:inst2|Selector0~1                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|PS~15                                              ; |stepper|stepperCtrl:inst2|PS~15                                              ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~2                                        ; |stepper|stepperCtrl:inst2|Selector0~2                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~3                                        ; |stepper|stepperCtrl:inst2|Selector0~3                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~4                                        ; |stepper|stepperCtrl:inst2|Selector0~4                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector1~0                                        ; |stepper|stepperCtrl:inst2|Selector1~0                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector1~1                                        ; |stepper|stepperCtrl:inst2|Selector1~1                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector1~2                                        ; |stepper|stepperCtrl:inst2|Selector1~2                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector2~0                                        ; |stepper|stepperCtrl:inst2|Selector2~0                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector2~1                                        ; |stepper|stepperCtrl:inst2|Selector2~1                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector2~2                                        ; |stepper|stepperCtrl:inst2|Selector2~2                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector3~0                                        ; |stepper|stepperCtrl:inst2|Selector3~0                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector3~1                                        ; |stepper|stepperCtrl:inst2|Selector3~1                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector3~2                                        ; |stepper|stepperCtrl:inst2|Selector3~2                                        ; out0             ;
+; |stepper|clkDivider:inst|Add0~33                                              ; |stepper|clkDivider:inst|Add0~33                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~34                                              ; |stepper|clkDivider:inst|Add0~34                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~35                                              ; |stepper|clkDivider:inst|Add0~35                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~36                                              ; |stepper|clkDivider:inst|Add0~36                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~37                                              ; |stepper|clkDivider:inst|Add0~37                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~38                                              ; |stepper|clkDivider:inst|Add0~38                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~39                                              ; |stepper|clkDivider:inst|Add0~39                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~40                                              ; |stepper|clkDivider:inst|Add0~40                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~41                                              ; |stepper|clkDivider:inst|Add0~41                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~42                                              ; |stepper|clkDivider:inst|Add0~42                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~43                                              ; |stepper|clkDivider:inst|Add0~43                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~44                                              ; |stepper|clkDivider:inst|Add0~44                                              ; out0             ;
+; |stepper|clkDivider:inst|Equal0~0                                             ; |stepper|clkDivider:inst|Equal0~0                                             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~0              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~0              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~9              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~9              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~22             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~22             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~31             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~31             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~40             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~40             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~42             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~42             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~1 ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~1 ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]   ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]   ; out0             ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                         ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; Node Name                                                                     ; Output Port Name                                                              ; Output Port Type ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+; |stepper|stepOut[3]                                                           ; |stepper|stepOut[3]                                                           ; pin_out          ;
+; |stepper|stepOut[2]                                                           ; |stepper|stepOut[2]                                                           ; pin_out          ;
+; |stepper|stepOut[1]                                                           ; |stepper|stepOut[1]                                                           ; pin_out          ;
+; |stepper|stepOut[0]                                                           ; |stepper|stepOut[0]                                                           ; pin_out          ;
+; |stepper|reset                                                                ; |stepper|reset                                                                ; out              ;
+; |stepper|speedSel[7]                                                          ; |stepper|speedSel[7]                                                          ; out              ;
+; |stepper|speedSel[6]                                                          ; |stepper|speedSel[6]                                                          ; out              ;
+; |stepper|speedSel[5]                                                          ; |stepper|speedSel[5]                                                          ; out              ;
+; |stepper|speedSel[4]                                                          ; |stepper|speedSel[4]                                                          ; out              ;
+; |stepper|speedSel[3]                                                          ; |stepper|speedSel[3]                                                          ; out              ;
+; |stepper|speedSel[2]                                                          ; |stepper|speedSel[2]                                                          ; out              ;
+; |stepper|speedSel[1]                                                          ; |stepper|speedSel[1]                                                          ; out              ;
+; |stepper|dirSelect                                                            ; |stepper|dirSelect                                                            ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~0                                       ; |stepper|priorityEnc:inst1|encoderOut~0                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~1                                       ; |stepper|priorityEnc:inst1|encoderOut~1                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~2                                       ; |stepper|priorityEnc:inst1|encoderOut~2                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~3                                       ; |stepper|priorityEnc:inst1|encoderOut~3                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~4                                       ; |stepper|priorityEnc:inst1|encoderOut~4                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~5                                       ; |stepper|priorityEnc:inst1|encoderOut~5                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~6                                       ; |stepper|priorityEnc:inst1|encoderOut~6                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~7                                       ; |stepper|priorityEnc:inst1|encoderOut~7                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~8                                       ; |stepper|priorityEnc:inst1|encoderOut~8                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~9                                       ; |stepper|priorityEnc:inst1|encoderOut~9                                       ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut~10                                      ; |stepper|priorityEnc:inst1|encoderOut~10                                      ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut[2]                                      ; |stepper|priorityEnc:inst1|encoderOut[2]                                      ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut[1]                                      ; |stepper|priorityEnc:inst1|encoderOut[1]                                      ; out              ;
+; |stepper|priorityEnc:inst1|encoderOut[0]                                      ; |stepper|priorityEnc:inst1|encoderOut[0]                                      ; out              ;
+; |stepper|clkDivider:inst|counter~0                                            ; |stepper|clkDivider:inst|counter~0                                            ; out              ;
+; |stepper|clkDivider:inst|counter~1                                            ; |stepper|clkDivider:inst|counter~1                                            ; out              ;
+; |stepper|clkDivider:inst|counter~2                                            ; |stepper|clkDivider:inst|counter~2                                            ; out              ;
+; |stepper|clkDivider:inst|counter~3                                            ; |stepper|clkDivider:inst|counter~3                                            ; out              ;
+; |stepper|clkDivider:inst|counter~4                                            ; |stepper|clkDivider:inst|counter~4                                            ; out              ;
+; |stepper|clkDivider:inst|counter~5                                            ; |stepper|clkDivider:inst|counter~5                                            ; out              ;
+; |stepper|clkDivider:inst|counter[23]                                          ; |stepper|clkDivider:inst|counter[23]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[22]                                          ; |stepper|clkDivider:inst|counter[22]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[21]                                          ; |stepper|clkDivider:inst|counter[21]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[20]                                          ; |stepper|clkDivider:inst|counter[20]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[19]                                          ; |stepper|clkDivider:inst|counter[19]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[18]                                          ; |stepper|clkDivider:inst|counter[18]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[17]                                          ; |stepper|clkDivider:inst|counter[17]                                          ; regout           ;
+; |stepper|clkDivider:inst|counter[16]                                          ; |stepper|clkDivider:inst|counter[16]                                          ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive~0                                     ; |stepper|stepperCtrl:inst2|stepperDrive~0                                     ; out0             ;
+; |stepper|stepperCtrl:inst2|stepperDrive[0]                                    ; |stepper|stepperCtrl:inst2|stepperDrive[0]                                    ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive~1                                     ; |stepper|stepperCtrl:inst2|stepperDrive~1                                     ; out0             ;
+; |stepper|stepperCtrl:inst2|PS.S0                                              ; |stepper|stepperCtrl:inst2|PS.S0                                              ; regout           ;
+; |stepper|stepperCtrl:inst2|PS.S1                                              ; |stepper|stepperCtrl:inst2|PS.S1                                              ; regout           ;
+; |stepper|stepperCtrl:inst2|PS.S2                                              ; |stepper|stepperCtrl:inst2|PS.S2                                              ; regout           ;
+; |stepper|stepperCtrl:inst2|PS.S3                                              ; |stepper|stepperCtrl:inst2|PS.S3                                              ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive[3]                                    ; |stepper|stepperCtrl:inst2|stepperDrive[3]                                    ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive[2]                                    ; |stepper|stepperCtrl:inst2|stepperDrive[2]                                    ; regout           ;
+; |stepper|stepperCtrl:inst2|stepperDrive[1]                                    ; |stepper|stepperCtrl:inst2|stepperDrive[1]                                    ; regout           ;
+; |stepper|stepperCtrl:inst2|PS~2                                               ; |stepper|stepperCtrl:inst2|PS~2                                               ; out0             ;
+; |stepper|stepperCtrl:inst2|PS~3                                               ; |stepper|stepperCtrl:inst2|PS~3                                               ; out0             ;
+; |stepper|stepperCtrl:inst2|PS~5                                               ; |stepper|stepperCtrl:inst2|PS~5                                               ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~0                                        ; |stepper|stepperCtrl:inst2|Selector0~0                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|PS~7                                               ; |stepper|stepperCtrl:inst2|PS~7                                               ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~1                                        ; |stepper|stepperCtrl:inst2|Selector0~1                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|PS~15                                              ; |stepper|stepperCtrl:inst2|PS~15                                              ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~2                                        ; |stepper|stepperCtrl:inst2|Selector0~2                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~3                                        ; |stepper|stepperCtrl:inst2|Selector0~3                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector0~4                                        ; |stepper|stepperCtrl:inst2|Selector0~4                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector1~0                                        ; |stepper|stepperCtrl:inst2|Selector1~0                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector1~1                                        ; |stepper|stepperCtrl:inst2|Selector1~1                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector1~2                                        ; |stepper|stepperCtrl:inst2|Selector1~2                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector2~0                                        ; |stepper|stepperCtrl:inst2|Selector2~0                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector2~1                                        ; |stepper|stepperCtrl:inst2|Selector2~1                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector2~2                                        ; |stepper|stepperCtrl:inst2|Selector2~2                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector3~0                                        ; |stepper|stepperCtrl:inst2|Selector3~0                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector3~1                                        ; |stepper|stepperCtrl:inst2|Selector3~1                                        ; out0             ;
+; |stepper|stepperCtrl:inst2|Selector3~2                                        ; |stepper|stepperCtrl:inst2|Selector3~2                                        ; out0             ;
+; |stepper|clkDivider:inst|Add0~33                                              ; |stepper|clkDivider:inst|Add0~33                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~34                                              ; |stepper|clkDivider:inst|Add0~34                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~35                                              ; |stepper|clkDivider:inst|Add0~35                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~36                                              ; |stepper|clkDivider:inst|Add0~36                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~37                                              ; |stepper|clkDivider:inst|Add0~37                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~38                                              ; |stepper|clkDivider:inst|Add0~38                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~39                                              ; |stepper|clkDivider:inst|Add0~39                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~40                                              ; |stepper|clkDivider:inst|Add0~40                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~41                                              ; |stepper|clkDivider:inst|Add0~41                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~42                                              ; |stepper|clkDivider:inst|Add0~42                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~43                                              ; |stepper|clkDivider:inst|Add0~43                                              ; out0             ;
+; |stepper|clkDivider:inst|Add0~44                                              ; |stepper|clkDivider:inst|Add0~44                                              ; out0             ;
+; |stepper|clkDivider:inst|Equal0~0                                             ; |stepper|clkDivider:inst|Equal0~0                                             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~0              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~0              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~1              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~2              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~3              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~4              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~5              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~6              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~7              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~8              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~9              ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~9              ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~10             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~11             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~12             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~13             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~14             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~15             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~16             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~17             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~18             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~19             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~20             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~0 ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~21             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~22             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~22             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~23             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~24             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~25             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~26             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~27             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~28             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~29             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~30             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~31             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~31             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~32             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~33             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~34             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~35             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~36             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~37             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~38             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~39             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~40             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~40             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~41             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~42             ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|_~42             ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~1 ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]~1 ; out0             ;
+; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]   ; |stepper|clkDivider:inst|lpm_mux:Mux0|mux_3nc:auto_generated|result_node[0]   ; out0             ;
++-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun Dec 11 01:13:24 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off stepper -c stepper
+Info: Using vector source file "D:/DE2Projects/Lab7/stepper/stepper.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      34.52 %
+Info: Number of transitions in simulation is 1224657
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 150 megabytes
+    Info: Processing ended: Sun Dec 11 01:13:34 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:10
+
+

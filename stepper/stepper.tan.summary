@@ -1,0 +1,206 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.313 ns
+From           : dirSelect
+To             : Control:inst1|PS.S2
+From Clock     : --
+To Clock       : speedSel[6]
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.444 ns
+From           : Control:inst1|stepperDrive[2]
+To             : stepOut[2]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.682 ns
+From           : speedSel[0]
+To             : Control:inst1|stepperDrive[0]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'speedSel[4]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 259.34 MHz ( period = 3.856 ns )
+From           : Control:inst1|PS.S1
+To             : Control:inst1|stepperDrive[3]
+From Clock     : speedSel[4]
+To Clock       : speedSel[4]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'speedSel[6]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 296.47 MHz ( period = 3.373 ns )
+From           : Control:inst1|PS.S1
+To             : Control:inst1|stepperDrive[3]
+From Clock     : speedSel[6]
+To Clock       : speedSel[6]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'speedSel[7]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 297.27 MHz ( period = 3.364 ns )
+From           : Control:inst1|PS.S1
+To             : Control:inst1|stepperDrive[3]
+From Clock     : speedSel[7]
+To Clock       : speedSel[7]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'speedSel[5]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 300.66 MHz ( period = 3.326 ns )
+From           : Control:inst1|PS.S1
+To             : Control:inst1|stepperDrive[3]
+From Clock     : speedSel[5]
+To Clock       : speedSel[5]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'speedSel[2]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 374.39 MHz ( period = 2.671 ns )
+From           : Control:inst1|PS.S1
+To             : Control:inst1|stepperDrive[3]
+From Clock     : speedSel[2]
+To Clock       : speedSel[2]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 390.17 MHz ( period = 2.563 ns )
+From           : clkDivider:inst|counter[0]
+To             : clkDivider:inst|counter[15]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'speedSel[3]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 395.57 MHz ( period = 2.528 ns )
+From           : Control:inst1|PS.S1
+To             : Control:inst1|stepperDrive[3]
+From Clock     : speedSel[3]
+To Clock       : speedSel[3]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'speedSel[1]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 420.17 MHz ( period = 2.380 ns )
+From           : Control:inst1|PS.S1
+To             : Control:inst1|stepperDrive[3]
+From Clock     : speedSel[1]
+To Clock       : speedSel[1]
+Failed Paths   : 0
+
+Type           : Clock Hold: 'speedSel[4]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Control:inst1|PS.S2
+To             : Control:inst1|PS.S1
+From Clock     : speedSel[4]
+To Clock       : speedSel[4]
+Failed Paths   : 16
+
+Type           : Clock Hold: 'speedSel[6]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Control:inst1|PS.S2
+To             : Control:inst1|PS.S1
+From Clock     : speedSel[6]
+To Clock       : speedSel[6]
+Failed Paths   : 16
+
+Type           : Clock Hold: 'speedSel[7]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Control:inst1|PS.S2
+To             : Control:inst1|PS.S1
+From Clock     : speedSel[7]
+To Clock       : speedSel[7]
+Failed Paths   : 16
+
+Type           : Clock Hold: 'speedSel[5]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Control:inst1|PS.S2
+To             : Control:inst1|PS.S1
+From Clock     : speedSel[5]
+To Clock       : speedSel[5]
+Failed Paths   : 16
+
+Type           : Clock Hold: 'speedSel[2]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Control:inst1|PS.S2
+To             : Control:inst1|PS.S1
+From Clock     : speedSel[2]
+To Clock       : speedSel[2]
+Failed Paths   : 16
+
+Type           : Clock Hold: 'speedSel[3]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Control:inst1|PS.S2
+To             : Control:inst1|PS.S1
+From Clock     : speedSel[3]
+To Clock       : speedSel[3]
+Failed Paths   : 16
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Control:inst1|PS.S2
+To             : Control:inst1|PS.S1
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 12
+
+Type           : Clock Hold: 'speedSel[1]'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Control:inst1|PS.S2
+To             : Control:inst1|PS.S1
+From Clock     : speedSel[1]
+To Clock       : speedSel[1]
+Failed Paths   : 4
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 112
+
+--------------------------------------------------------------------------------------
+

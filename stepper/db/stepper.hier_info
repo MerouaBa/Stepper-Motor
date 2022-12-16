@@ -1,0 +1,128 @@
+|StepperMotorbdf
+stepOut[0] <= Control:inst1.stepperDrive[0]
+stepOut[1] <= Control:inst1.stepperDrive[1]
+stepOut[2] <= Control:inst1.stepperDrive[2]
+stepOut[3] <= Control:inst1.stepperDrive[3]
+clk => clkDivider:inst.clk
+rst => clkDivider:inst.rst
+speedSel[0] => PEncoder:inst2.Inp[0]
+speedSel[1] => PEncoder:inst2.Inp[1]
+speedSel[2] => PEncoder:inst2.Inp[2]
+speedSel[3] => PEncoder:inst2.Inp[3]
+speedSel[4] => PEncoder:inst2.Inp[4]
+speedSel[5] => PEncoder:inst2.Inp[5]
+speedSel[6] => PEncoder:inst2.Inp[6]
+speedSel[7] => PEncoder:inst2.Inp[7]
+dirSelect => Control:inst1.dir
+
+
+|StepperMotorbdf|Control:inst1
+clk => stepperDrive[3]~reg0.CLK
+clk => stepperDrive[2]~reg0.CLK
+clk => stepperDrive[1]~reg0.CLK
+clk => stepperDrive[0]~reg0.CLK
+dir => Selector3.IN3
+dir => Selector2.IN3
+dir => Selector1.IN3
+dir => Selector0.IN3
+dir => Selector3.IN1
+dir => Selector2.IN1
+dir => Selector1.IN1
+dir => Selector0.IN1
+rst => stepperDrive[0]~reg0.ENA
+rst => stepperDrive[3]~reg0.ENA
+rst => stepperDrive[2]~reg0.ENA
+rst => stepperDrive[1]~reg0.ENA
+stepperDrive[0] <= stepperDrive[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+stepperDrive[1] <= stepperDrive[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+stepperDrive[2] <= stepperDrive[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+stepperDrive[3] <= stepperDrive[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StepperMotorbdf|clkDivider:inst
+clk => counter[23].CLK
+clk => counter[22].CLK
+clk => counter[21].CLK
+clk => counter[20].CLK
+clk => counter[19].CLK
+clk => counter[18].CLK
+clk => counter[17].CLK
+clk => counter[16].CLK
+clk => counter[15].CLK
+clk => counter[14].CLK
+clk => counter[13].CLK
+clk => counter[12].CLK
+clk => counter[11].CLK
+clk => counter[10].CLK
+clk => counter[9].CLK
+clk => counter[8].CLK
+clk => counter[7].CLK
+clk => counter[6].CLK
+clk => counter[5].CLK
+clk => counter[4].CLK
+clk => counter[3].CLK
+clk => counter[2].CLK
+clk => counter[1].CLK
+clk => counter[0].CLK
+rst => counter[23].ACLR
+rst => counter[22].ACLR
+rst => counter[21].ACLR
+rst => counter[20].ACLR
+rst => counter[19].ACLR
+rst => counter[18].ACLR
+rst => counter[17].ACLR
+rst => counter[16].ACLR
+rst => counter[15].ACLR
+rst => counter[14].ACLR
+rst => counter[13].ACLR
+rst => counter[12].ACLR
+rst => counter[11].ACLR
+rst => counter[10].ACLR
+rst => counter[9].ACLR
+rst => counter[8].ACLR
+rst => counter[7].ACLR
+rst => counter[6].ACLR
+rst => counter[5].ACLR
+rst => counter[4].ACLR
+rst => counter[3].ACLR
+rst => counter[2].ACLR
+rst => counter[1].ACLR
+rst => counter[0].ACLR
+divider[0] => Mux0.IN2
+divider[1] => Mux0.IN1
+divider[2] => Mux0.IN0
+clkslow <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StepperMotorbdf|PEncoder:inst2
+Inp[0] => Equal0.IN0
+Inp[1] => Outp~0.DATAA
+Inp[1] => Equal0.IN1
+Inp[2] => Outp~1.DATAA
+Inp[2] => Outp~0.OUTPUTSELECT
+Inp[2] => Equal0.IN2
+Inp[3] => Outp~2.OUTPUTSELECT
+Inp[3] => Outp~1.OUTPUTSELECT
+Inp[3] => Equal0.IN3
+Inp[4] => Outp~5.DATAA
+Inp[4] => Outp~4.OUTPUTSELECT
+Inp[4] => Outp~3.OUTPUTSELECT
+Inp[4] => Equal0.IN4
+Inp[5] => Outp~7.OUTPUTSELECT
+Inp[5] => Outp~6.OUTPUTSELECT
+Inp[5] => Outp~5.OUTPUTSELECT
+Inp[5] => Equal0.IN5
+Inp[6] => Outp~10.OUTPUTSELECT
+Inp[6] => Outp~9.OUTPUTSELECT
+Inp[6] => Outp~8.OUTPUTSELECT
+Inp[6] => Equal0.IN6
+Inp[7] => Outp~13.OUTPUTSELECT
+Inp[7] => Outp~12.OUTPUTSELECT
+Inp[7] => Outp~11.OUTPUTSELECT
+Inp[7] => Equal0.IN7
+Outp[0] <= Outp~13.DB_MAX_OUTPUT_PORT_TYPE
+Outp[1] <= Outp~12.DB_MAX_OUTPUT_PORT_TYPE
+Outp[2] <= Outp~11.DB_MAX_OUTPUT_PORT_TYPE
+GS <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+enitty stepper is
+	port(
+		dirSel: in std_logic;
+		speedSel: in std_logic_vector(7 downto 0);
+		stepperDrive: out std_logic_vector(3 downto 0)
+	);
+end stepper;
+
+architecture behavior of stepper is
+	signal priDecOut: std_logic_vector(2 downto 0);
+	
+	begin
+		
+end behavior;
