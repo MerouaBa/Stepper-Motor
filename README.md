@@ -23,5 +23,24 @@ Inorder to use this design :
 ![stepper BD](https://user-images.githubusercontent.com/61749380/208877360-f4664fb3-7b9c-4ad0-9a7e-ec1fa0744434.png)
 
 
+# Discussion
+
+
+
+
+
+
+
+
+
+# Contributors:
+
+-Boumerzoug Nadir 
+
+-Benmalek Assala
+
+-Bayou Meroua
+
+
 
 
