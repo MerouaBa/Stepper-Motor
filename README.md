@@ -19,9 +19,7 @@ Inorder to use this design :
 
 4-Verify the different step mottor speed and direction using the DE2 board.
 
-
-![stepper BD](https://user-images.githubusercontent.com/61749380/208877360-f4664fb3-7b9c-4ad0-9a7e-ec1fa0744434.png)
-
+![stepper BDF](https://user-images.githubusercontent.com/89112499/209016717-cd0e27b0-387a-43c0-9938-75e5514ee6f0.png)
 
 # Discussion
 
