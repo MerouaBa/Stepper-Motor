@@ -34,7 +34,7 @@ After defining the components of the FSM, we wrote a VHDL file for each of them,
 
 # Contributors:
 
--Boumerzoug Nadir 
+-Boumerzoug Nadhir 
 
 -Benmalek Assala
 
